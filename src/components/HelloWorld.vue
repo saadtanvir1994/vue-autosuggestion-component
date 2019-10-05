@@ -44,7 +44,7 @@
   ,
     focusSuggestions() {
     console.log('focus');
-     return axios.get('http://dev05.quasiris.de:8087/api/v1/admin/search/fields/suggest/hornbach-de/search?q=a').then((res) => res.data.map(x => x.value));
+     return axios.get('http://dev05.quasiris.de:8087/api/v1/admin/search/fields/suggest/hornbach-de/search?q').then((res) => res.data.map(x => x.value));
      console.log('focus2');
 
   }
